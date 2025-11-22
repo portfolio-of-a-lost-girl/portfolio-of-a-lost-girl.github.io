@@ -9,7 +9,7 @@
 /* SemiBold Italic */
 @font-face {
     font-family: "RedHatDisplay-Semibold";
-    src: url("fonts/RedHatDisplay-SemiBoldItalic.ttf") format("truetype");
+    src: url("photos/RedHatDisplay-SemiBoldItalic.ttf") format("truetype");
     font-weight: 600;   /* SemiBold */
     font-style: italic;
 }
@@ -17,7 +17,7 @@
 /* Black (regular style) */
 @font-face {
     font-family: "RedHatDisplay-Black";
-    src: url("fonts/RedHatDisplay-Black.ttf") format("truetype");
+    src: url("photos/RedHatDisplay-Black.ttf") format("truetype");
     font-weight: 900;   /* Black */
     font-style: normal;
 }
