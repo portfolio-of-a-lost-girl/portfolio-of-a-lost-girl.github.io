@@ -21,6 +21,10 @@
     font-weight: 900;   /* Black */
     font-style: normal;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 /* Floating left sidebar */
 .sidebar {
     position: fixed;
