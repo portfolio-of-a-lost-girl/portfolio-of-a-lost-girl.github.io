@@ -6,6 +6,21 @@
    Sunset:    #ff9f68
    Gold:      #ffd369
 -------------------------------------------------- */
+/* SemiBold Italic */
+@font-face {
+    font-family: "RedHatDisplay";
+    src: url("fonts/RedHatDisplay-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;   /* SemiBold */
+    font-style: italic;
+}
+
+/* Black (regular style) */
+@font-face {
+    font-family: "RedHatDisplay";
+    src: url("fonts/RedHatDisplay-Black.ttf") format("truetype");
+    font-weight: 900;   /* Black */
+    font-style: normal;
+}
 
 :root {
     --pink: #ff6fb5;
