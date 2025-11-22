@@ -4,9 +4,85 @@
     <link rel="stylesheet" href="web.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recent Works — Portfolio of a Lost Girl</title>
+    <title>Recent Works — Portfolio Of A Lost Girl</title>
 </head>
 <body>
+<style>
+    body {
+        margin: 0;
+        font-family: Times New Roman, Helvetica, sans-serif;
+        background: #f5f5f5;
+        color: #333;
+    }
+
+    header {
+        background: #9D5C63;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        background: #584B53;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: #598392;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .piece {
+        margin-bottom: 40px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        backdrop-filter: blur(5px);
+    }
+
+    .piece h2 {
+        font-family: 'RedHatDisplay-Black', serif;
+        color: #D6E3F8;
+        margin-bottom: 10px;
+    }
+
+    .piece p {
+        font-family: 'RedHatDisplay', serif;
+        line-height: 1.6;
+        color: #fff;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        color: #777;
+    }
+
+</style>
+
 <header>
     <a href="index.html" style="text-decoration: none;">
         <h1 style="font-family: 'RedHatDisplay-Black'; color: #D6E3F8;">
@@ -21,12 +97,23 @@
 </nav>
 
 <div class="container">
-    <h2 style="font-family: 'RedHatDisplay-Black';">Recent Works</h2>
-    <p>here are some of my most recent works !! </p>
+    <!-- Piece 1 -->
+    <div class="piece">
+        <h2>Lost in Thought</h2>
+        <p>i wandered through the streets of my mind, picking up fragments of memory and shadows of ideas...</p>
+    </div>
+
+    <!-- Piece 2 -->
+    <div class="piece">
+        <h2>Evening Reflections</h2>
+        <p>the sun dips behind the horizon, painting my thoughts in pink and purple as the city hums softly beneath me...</p>
+        <img src="photos/IMG_7726.jpg" style="width:40%; height:auto; display:block; margin:0 auto; border-radius:10px;" alt="Sunset">
+    </div>
 </div>
 
 <footer>
     &copy; 2025 My Website — All Rights Reserved
 </footer>
+
 </body>
 </html>
