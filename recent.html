@@ -136,6 +136,28 @@
 </head>
 
 <body>
+    <script>
+const links = document.querySelectorAll('.sidebar a');
+
+links.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // prevent default jump
+        const targetId = this.getAttribute('href').slice(1);
+        const targetEl = document.getElementById(targetId);
+        if (!targetEl) return;
+
+        const headerOffset = 140; // adjust if you want the scroll slightly lower
+        const elementPosition = targetEl.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth' // soft scroll animation
+        });
+    });
+});
+</script>
+
 <div class="sidebar">
     <a href="#idea-of-hope">The Idea Of Hope</a>
     <a href="#jade">Jade</a>
