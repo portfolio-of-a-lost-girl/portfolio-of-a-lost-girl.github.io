@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="web.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relics — Portfolio Of A Lost Girl</title>
+
+<style>
+    /* Page fade-in animation */
+    body {
+        margin: 0;
+        font-family: Times New Roman, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #F7DDE2, #DCC7FF);
+        color: #333;
+        animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    header {
+        background: #9D5C63;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    nav {
+        background: #584B53;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.2s;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: #F7DDE2;
+    }
+
+    /* Piece cards */
+    .piece {
+        background-color: #ffffff;
+        border: 3px solid #e26e6f;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 40px auto;
+        max-width: 900px;
+        box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        scroll-margin-top: 120px; /* adjust this number */
+    }
+
+    .piece:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.22);
+    }
+
+    /* Title formatting */
+    .piece h2 {
+        font-family: 'RedHatDisplay-Black', serif;
+        color: #9D5C63;
+        margin-bottom: 10px;
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    /* Pretty underline flourish */
+    .piece h2::after {
+        content: "";
+        width: 80px;
+        height: 3px;
+        background: #e26e6f;
+        border-radius: 2px;
+        display: block;
+        margin: 8px auto 0 auto;
+    }
+
+    /* Poem text */
+    .piece p {
+        font-family: 'Times New Roman', serif;
+        line-height: 1.7;
+        color: black;
+        font-size: 18px;
+        white-space: normal;
+        margin-top: 20px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 60px;
+        padding: 20px;
+        color: #5a5a5a;
+    }
+
+    /* Floating back to top button */
+    #topBtn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #e26e6f;
+        color: white;
+        padding: 12px 18px;
+        border-radius: 50px;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        transition: 0.2s;
+        z-index: 50;
+    }
+
+    #topBtn:hover {
+        background: #c75556;
+    }
+</style>
+
+</head>
+
+<body>
+    <script>
+const links = document.querySelectorAll('.sidebar a');
+
+links.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // prevent default jump
+        const targetId = this.getAttribute('href').slice(1);
+        const targetEl = document.getElementById(targetId);
+        if (!targetEl) return;
+
+        const headerOffset = 140; // adjust if you want the scroll slightly lower
+        const elementPosition = targetEl.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth' // soft scroll animation
+        });
+    });
+});
+</script>
+
+<div class="sidebar">
+    <a href="#idea-of-hope">The Idea Of Hope</a>
+    <a href="#jade">Jade</a>
+</div>
+
+<header>
+    <a href="index.html" style="text-decoration: none;">
+        <h1 style="font-family: 'RedHatDisplay-Black'; color: #D6E3F8;">
+            Portfolio of a Lost Girl
+        </h1>
+    </a>
+</header>
+
+<nav>
+    <a href="recent.html">Recent</a>
+    <a href="relics.html">Relics</a>
+</nav>
+
+
+<!-- PIECE 1 -->
+<div class="piece" id="idea-of-hope">
+    <h2>The Idea Of Hope</h2>
+    <p>
+        You call me <br>
+        Back <br>
+        After getting drunk enough to forget <br>
+        I stayed waiting <br>
+        Watchful <br>
+        For you <br>
+        Only for you <br>
+        To have forgotten the existence of me <br>
+        And yet you <br>
+        Call to tell me that you <br>
+        Remember destroying my shelf and stealing my charger <br>
+        And that I wanted you here by 9 <br>
+        You remember me <br>
+        When we looked at the stars and you <br>
+        Only had eyes for me <br>
+        But it doesn’t take root in your <br>
+        Mind, only in mine <br>
+        As I wait <br>
+        Count the hours <br>
+        To be picked up and played with <br>
+        Like the doll I am for you <br>
+        Take off my glasses and clean them <br>
+        Why don’t you <br>
+        Please clean the tears <br>
+        Off my eyes <br>
+        Please <br>
+        Because I dread the seconds without you <br>
+        I don’t even want you <br>
+        To come pick me up and hold me in the mirror <br>
+        As we stare at us <br>
+        Because we look so good <br>
+        Together–even though <br>
+        At this point, <br>
+        I hate myself for getting attached to you <br>
+        You’re only good because you <br>
+        Clawed through women <br>
+        So you know us, <br>
+        Me <br>
+        You <br>
+        Won’t make the effort to come <br>
+        I got this idea in my head <br>
+        This scene that plays out <br>
+        When you <br>
+        Come over <br>
+        But don’t let me envision it because it won’t happen <br>
+        You <br>
+        “I’ll text you tomorrow” <br>
+        No you <br>
+        Won’t <br>
+        It's 8:36 and I need to stop thinking of you <br>
+        Of your lies <br>
+        I believed you would come <br>
+        Stood by the door and begged god to let you come home to me <br>
+        Hoping the hands that once carried me <br>
+        Would remember I was alive <br>
+        But you won’t <br>
+        This lover girl has been shot in the head <br>
+        Burned at the stake <br>
+        Thrown into the garbage <br>
+        Bruised in the heart and she <br>
+        Bled all over her sleeve <br>
+        Cut with insincerity inside her brain <br>
+        Lies poisoned by delusion and self hatred <br>
+        To believe in hope <br>
+        To believe in love <br>
+        To believe in you <br>
+        Sleeves stiff with the blood <br>
+        Of believing <br>
+        The heart I used to wear so proudly is gone <br>
+        You like my <s>thoughts</s> thighs <br>
+        It was way too intimate for you <br>
+        Way too intimate <br>
+        As if intimacy and depth is too much <br>
+        One night with you created something people live life in search of <br>
+        I think about you <br>
+        In the light <br>
+        Even though I shouldn’t <br>
+        Because you only think about me <br>
+        At night <br>
+        You destroyed something in me but I <br>
+        Can’t give it up because you <br>
+        Made me believe in an idea <br>
+        The idea of hope <br>
+        The idea of doom <br>
+        But I suppose you are still my muse <br>
+        You are only you because you know me
+    </p>
+</div>
+
+
+<!-- PIECE 2 -->
+<div class="piece" id="jade">
+    <h2>Jade</h2>
+    <p>
+        I trip on the street <br>
+        Laughing at myself <br>
+        I look up at the sky <br>
+        I wish I could stop crying <br>
+        Numbness never felt so <br>
+        Desolate <br>
+        Pain never felt so <br>
+        Empty <br>
+        Dreams I’ve had since youth <br>
+        Crumble and fall <br>
+        Never to be resurrected <br>
+        Lover girl <br>
+        Dead <br>
+        And gone <br>
+        They say she’ll come back <br>
+        But I don’t know <br>
+        Will she? <br>
+        Obsessive by nature <br>
+        But nature has been overworked <br>
+        I’ve overproduced my destiny <br>
+        Only for nature <br>
+        To wrap me in her jade <br>
+        And tell me <br>
+        It’s enough <br>
+        No more <br>
+        No love for you <br>
+        Closer to fate <br>
+        So close I’ve gone past it <br>
+        And lost something <br>
+        Some hope <br>
+        Some hope in love <br>
+        In truth <br>
+        In beauty <br>
+        In hope <br>
+        And I want it to stay gone <br>
+        My love is with the world <br>
+        I will not fall in love with anyone <br>
+        No one is meant to love me <br>
+        Intimacy of one <br>
+        Will not <br>
+        But intimacy of <br>
+        Nature’s leaves <br>
+        Nature’s breath <br>
+        Nature’s ponds and lilies <br>
+        Nature’s beauty <br>
+        Will hold me tight <br>
+        In jade.
+    </p>
+</div>
+
+
+<footer>
+    &copy; 2025 My Website — All Rights Reserved
+</footer>
+
+<!-- Back to top button -->
+<button id="topBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+    ↑ Top
+</button>
+
+</body>
+</html>
