@@ -1,4 +1,8 @@
-## Hi there 👋
+## Hi there 
+I'm just a girl who loves writing and also knows how to code lmao. So i coded a blog to post my writings. 
+Pls feel free to read over as much as u want!!
+
+https://portfolio-of-a-lost-girl.github.io/index.html
 
 <!--
 **portfolio-of-a-lost-girl/portfolio-of-a-lost-girl** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
