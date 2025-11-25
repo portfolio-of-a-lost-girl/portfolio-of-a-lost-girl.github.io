@@ -26,6 +26,7 @@ html {
 }
 
 /* Floating left sidebar */
+/* Floating left sidebar (now scrollable) */
 .sidebar {
     position: fixed;
     top: 120px;
@@ -34,7 +35,30 @@ html {
     flex-direction: column;
     gap: 14px;
     z-index: 100;
+
+    max-height: 70vh;      /* <-- limits height so it can scroll */
+    overflow-y: auto;      /* <-- enables scrolling */
+    padding-right: 6px;    /* <-- prevents text cutoff */
 }
+/* Pretty scrollbar for sidebar */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #e26e6f;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #c75556;
+}
+
 
 /* Sidebar links styled as rounded little bars */
 .sidebar a {
